@@ -1,0 +1,58 @@
+a:link{
+  color:black;
+  text-decoration: none;
+}
+
+a:visited{
+  color:gray;
+}
+
+a:hover{
+  color:green;
+}
+
+#active{
+  color:red
+}
+
+
+h1{
+  text-align: center;
+  /*font-weight:bold;*/ /*폰트 굵게, CSS는 이런식으로 주석처리*/
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  border-bottom: gray 1px solid;
+  padding-bottom: 10px;
+  margin:0px;
+}
+
+ul{
+  border-right: black 1px solid;
+  width:250px;
+  margin:0px;
+  padding-top:30px;a
+}
+h3{
+  text-align: center;
+}
+
+#grid
+{
+  display: grid;
+  grid-template-columns: 300px 1fr
+}
+@media(max-width:800px ){
+  #grid
+  {
+    display: block;
+  }
+  ul{
+  border-right: none;
+    }
+    h2{
+      border-bottom: none;
+    }
+}
